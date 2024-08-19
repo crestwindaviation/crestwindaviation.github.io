@@ -1,0 +1,167 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #4c4c4c; /* Dark gray */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 5px solid #004c00; /* Dark green */
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 76, 0, 0.7); /* Dark green with transparency */
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.highlight {
+  background-color: #f0f0f0; /* Light gray */
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 5px solid #004c00; /* Dark green */
+  border-bottom: 5px solid #004c00; /* Dark green */
+}
+
+.highlight-title {
+  color: #004c00; /* Dark green */
+  font-size: 2em;
+}
+
+.program-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+.program-link {
+  background-color: #808080; /* Silver */
+  color: white;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: calc(50% - 40px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.program-link:hover {
+  transform: scale(1.05);
+}
+
+.program-link a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-crestwind {
+  background-color: white;
+  padding: 40px 20px;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1 1 50%;
+  padding: 20px;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.about-images {
+  flex: 1 1 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-images img {
+  width: 45%;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #4c4c4c; /* Dark gray */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
