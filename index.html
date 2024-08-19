@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crestwind Aviation Club</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-color: #f0f0f0;
+        color: #333;
+        font-family: Arial, sans-serif;
+      }
+      .slideshow-container {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+        overflow: hidden;
+      }
+      .mySlides {
+        display: none;
+        width: 100%;
+        height: auto;
+      }
+      .scroll-background {
+        background: url("pictures/20240210_173151.jpg") no-repeat center center
+          fixed;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+      }
+      .section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: #f0f0f0;
+        margin: 20px 0;
+      }
+      .section img {
+        max-width: 50%;
+        height: auto;
+      }
+      .section .text-box {
+        max-width: 50%;
+        padding: 20px;
+        background-color: #f0f0f0;
+        text-align: center;
+        font-family: "Georgia", serif;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      .section h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      .section p,
+      .section ul {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .section ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .section ul li {
+        margin-bottom: 10px;
+      }
+      .section ul li:before {
+        content: "•";
+        color: #333;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+      .section.reverse {
+        flex-direction: row-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Crestwind Aviation</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="private-pilot.html">Private Pilot</a></li>
+          <li><a href="instrument-rating.html">Instrument Rating</a></li>
+          <li><a href="commercial-pilot.html">Commercial Pilot</a></li>
+          <li><a href="flight-instructor.html">Flight Instructor</a></li>
+          <li><a href="bylaws.html">Bylaws</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="discovery-flight.html">Discovery Flight</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Static Image -->
+    <div class="slideshow-container">
+      <img
+        class="mySlides"
+        src="pictures/IMG_6747.jpg"
+        style="display: block"
+      />
+    </div>
+
+    <!-- Alternating Sections -->
+    <div class="section">
+      <img src="pictures/IMG_6743.jpg" alt="Image 1" />
+      <div class="text-box">
+        <h2>Crestwind Aviation Club</h2>
+        <p>
+          Discover a novel approach to aviation where students own their planes
+          and pay for maintenance, significantly reducing costs.
+        </p>
+      </div>
+    </div>
+
+    <!-- Where Pilots Become Owners (Text on the Left, Image on the Right) -->
+    <div class="section">
+      <div class="text-box">
+        <h2>Where Pilots Become Owners</h2>
+        <p>
+          Welcome to the Crestwind Aviation Club—a community built by pilots,
+          for pilots. Here, we believe in more than just flying; we believe in
+          owning your experience, sharing your passion, and becoming part of a
+          group that values the rich history of aviation. Whether you’re a
+          seasoned aviator or just starting your journey, Crestwind Aviation
+          Club offers you a unique opportunity to take control, both in the
+          cockpit and beyond.
+        </p>
+      </div>
+      <img src="pictures/20240625_195039.jpg" alt="Image 2" />
+    </div>
+
+    <!-- Why Join the Crestwind Aviation Club? (Text on the Right, Image on the Left) -->
+    <div class="section">
+      <img src="pictures/IMG_6752.jpg" alt="Image 3" />
+      <div class="text-box">
+        <h2>Why Join the Crestwind Aviation Club?</h2>
+        <ul>
+          <li>
+            <strong>Own a Piece of Aviation History:</strong> Our club gives you
+            the chance to fly and potentially own a share in one of the most
+            legendary aircraft—the Cessna 172. Known for its reliability and
+            timeless design, the Cessna 172 has trained generations of pilots
+            and continues to be a beloved aircraft for both learning and
+            leisure.
+          </li>
+          <li>
+            <strong>Co-own your plane:</strong> Owning a share of a plane will
+            reduce costs and keep flying fun. Go where you want to while keeping
+            your skills sharp. Learn how to become a great aviator with a sense
+            of community and the resources you need. Fly at your own pace while
+            making progress towards your goals!
+          </li>
+          <li>
+            <strong>Traditional Steam Gauge Aircraft:</strong> At Crestwind, we
+            take pride in our vintage aircraft, equipped with traditional steam
+            gauges. These planes offer a unique flying experience that’s both
+            challenging and rewarding, perfect for pilots who appreciate the
+            craftsmanship and legacy of classic aviation.
+          </li>
+          <li>
+            <strong>Community of Like-Minded Pilots:</strong> Join a community
+            of aviation enthusiasts who share your passion for flying. Our
+            members are more than just pilots—they’re owners, mentors, and
+            friends. Share your experiences, learn from others, and grow
+            together in a supportive environment.
+          </li>
+          <li>
+            <strong>High Wing, High Visibility:</strong> Experience the
+            unparalleled visibility and stability of high wing aircraft. Whether
+            you’re navigating through mountain passes or enjoying a scenic
+            flight, our high wing planes offer an unbeatable perspective.
+          </li>
+          <li>
+            <strong>Affordable Aircraft Ownership:</strong> We believe that
+            flying should be accessible. Our club structure is designed to make
+            aircraft ownership affordable, allowing you to experience the joys
+            of flying without the full financial burden of owning an aircraft
+            outright.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Scrolling Background -->
+    <div class="scroll-background"></div>
+
+    <!-- A Club for Go-Getters (Text on the Left, Image on the Right) -->
+    <div class="section">
+      <div class="text-box">
+        <h2>A Club for Go-Getters</h2>
+        <p>
+          Crestwind Aviation Club is not just about flying; it’s about taking
+          charge of your aviation journey. We provide the aircraft, the
+          resources, and the community, but the real value comes from what you
+          bring to the table. Our members are go-getters—pilots who are ready to
+          put in the effort, take on challenges, and earn their wings.
+        </p>
+        <ul>
+          <li>
+            <strong>Self-Directed Learning:</strong> While we offer mentorship
+            and guidance, much of your learning will be self-driven. If you’re
+            motivated and committed, you’ll find that the sky’s the limit.
+          </li>
+          <li>
+            <strong>Shared Ownership, Shared Responsibility:</strong> As a
+            member, you’ll have the opportunity to own a share in one of our
+            aircraft. This not only reduces your flying costs but also gives you
+            a deeper connection to the plane you fly.
+          </li>
+        </ul>
+      </div>
+      <img src="pictures/20231230_085648.jpg" alt="Image 4" />
+    </div>
+
+    <!-- Join the Crestwind Aviation Club (Text on the Right, Image on the Left) -->
+    <div class="section">
+      <img src="pictures/IMG_6738.jpg" alt="Image 5" />
+      <div class="text-box">
+        <h2>Join the Crestwind Aviation Club</h2>
+        <p>
+          Ready to become part of something bigger? The Crestwind Aviation Club
+          is more than just a place to fly—it’s a place to belong. Whether
+          you’re looking to own your first plane, connect with fellow pilots, or
+          simply enjoy the freedom of flight, our club offers you the
+          opportunity to do it all.
+        </p>
+      </div>
+    </div>
+
+    <!-- Contact Us Today (Text on the Left, Image on the Right) -->
+    <div class="section">
+      <div class="text-box">
+        <h2>Contact Us Today</h2>
+        <p>
+          Learn more about membership options, share ownership, and how you can
+          become a part of the Crestwind Aviation Club. Take the first step
+          toward owning your aviation experience and join a community that’s as
+          passionate about flying as you are.
+        </p>
+      </div>
+      <img src="pictures/IMG_6742.jpg" alt="Image 6" />
+    </div>
+
+    <footer>
+      <p>Contact Us: 123-456-7890 | info@crestwindaviation.com</p>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

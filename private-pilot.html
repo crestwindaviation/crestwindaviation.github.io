@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Pilot Club - Crestwind Aviation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-color: #f0f0f0;
+        color: #333;
+        font-family: Arial, sans-serif;
+      }
+      .slideshow-container {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+        overflow: hidden;
+      }
+      .mySlides {
+        display: none;
+        width: 100%;
+        height: auto;
+      }
+      .scroll-background {
+        background: url("pictures/20240210_173151.jpg") no-repeat center center
+          fixed;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+      }
+      .section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: #f0f0f0;
+        margin: 20px 0;
+      }
+      .section img {
+        max-width: 50%;
+        height: auto;
+      }
+      .section .text-box {
+        max-width: 50%;
+        padding: 20px;
+        background-color: #f0f0f0;
+        text-align: center;
+        font-family: "Georgia", serif;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      .section h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      .section p,
+      .section ul {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .section ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      .section ul li {
+        margin-bottom: 10px;
+      }
+      .section ul li:before {
+        content: "•";
+        color: #333;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+      .section.reverse {
+        flex-direction: row-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Crestwind Aviation</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="private-pilot.html">Private Pilot</a></li>
+          <li><a href="instrument-rating.html">Instrument Rating</a></li>
+          <li><a href="commercial-pilot.html">Commercial Pilot</a></li>
+          <li><a href="flight-instructor.html">Flight Instructor</a></li>
+          <li><a href="bylaws.html">Bylaws</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="discovery-flight.html">Discovery Flight</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Static Image 
+    <div class="slideshow-container">
+      <img
+        class="mySlides"
+        src="pictures/IMG_6747.jpg"
+        style="display: block"
+      />
+    </div> -->
+
+    <!-- Alternating Sections -->
+    <div class="section">
+      <img src="pictures/IMG_6749.jpg" alt="Image 1" />
+      <div class="text-box">
+        <h2>Private Pilot Club</h2>
+        <p>Overview</p>
+        <p>
+          The Crestwind Aviation Private Pilot Club offers a unique path to
+          earning your Private Pilot License, combining the experience of owning
+          and flying your own vintage aircraft with training in a Cessna 172
+          equipped with traditional steam gauges. This approach not only
+          enhances your skills as a pilot but also deepens your connection to
+          the aircraft and the art of flying.
+        </p>
+      </div>
+    </div>
+
+    <!-- Scrolling Background -->
+    <div class="scroll-background"></div>
+
+    <!-- Mini Syllabus Part 1 (Text on the Left, Image on the Right) -->
+    <div class="section reverse">
+      <div class="text-box">
+        <h2>Mini Syllabus: Path to a Private Pilot License (PPL)</h2>
+        <ul>
+          <li>
+            <strong>Ground School:</strong> Study the fundamentals of flight,
+            including aerodynamics, aircraft systems, and FAA regulations, with
+            a focus on vintage aircraft like the Cessna 172.
+          </li>
+          <li>
+            <strong>Pre-Solo Training:</strong> Complete at least 20 hours of
+            flight training, focusing on basic maneuvers such as takeoffs,
+            landings, and straight-and-level flight.
+          </li>
+          <li>
+            <strong>Solo Flight:</strong> Achieve the proficiency required to
+            conduct solo flights after receiving the instructor’s endorsement.
+          </li>
+          <li>
+            <strong>Cross-Country Training:</strong> Conduct cross-country
+            flight training, learning to navigate using steam gauges and manual
+            controls.
+          </li>
+        </ul>
+      </div>
+      <img src="pictures/IMG_5764.jpg" alt="Image 2" />
+    </div>
+
+    <!-- Mini Syllabus Part 2 (Text on the Right, Image on the Left) -->
+    <div class="section reverse">
+      <img src="pictures/IMG_6741.jpg" alt="Image 3" />
+      <div class="text-box">
+        <h2>Mini Syllabus (Continued)</h2>
+        <ul>
+          <li>
+            <strong>Night Flight:</strong> Perform night flight training,
+            including a cross-country flight and multiple takeoffs and landings
+            to a full stop.
+          </li>
+          <li>
+            <strong>Advanced Maneuvers:</strong> Refine your skills with
+            instrument training and advanced flight maneuvers.
+          </li>
+          <li>
+            <strong>FAA Checkride:</strong> Successfully complete the FAA
+            Private Pilot Checkride, demonstrating your proficiency in the
+            aircraft you've trained in.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Scrolling Background after a few text blocks -->
+    <div class="scroll-background"></div>
+
+    <div class="section">
+      <img src="pictures/IMG_6744.jpg" alt="Image 4" />
+      <div class="text-box">
+        <h2>Membership Benefits</h2>
+        <ul>
+          <li>
+            <strong>Aircraft Ownership:</strong> Train in your own aircraft,
+            which deepens your understanding of its operations and builds
+            confidence in its performance.
+          </li>
+          <li>
+            <strong>Vintage Aircraft Experience:</strong> Gain hands-on
+            experience with traditional steam gauges, manual flaps, trim, and
+            carburetor, providing a tactile and immersive flying experience.
+          </li>
+          <li>
+            <strong>Community Support:</strong> Engage with a community of
+            fellow aviators who share a passion for flying, aircraft ownership,
+            and the traditions of vintage aviation.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section reverse">
+      <img src="pictures/IMG_6745.jpg" alt="Image 5" />
+      <div class="text-box">
+        <h2>Getting Started</h2>
+        <p>
+          To begin your journey toward becoming a private pilot and enjoying the
+          benefits of aircraft ownership with Crestwind Aviation, please contact
+          us for more information on membership options and requirements.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>Contact Us: 123-456-7890 | info@crestwindaviation.com</p>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
