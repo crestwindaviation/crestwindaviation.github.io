@@ -1,31 +1,27 @@
 body {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color: #f0f0f0;
 }
 
 header {
-  background-color: #4c4c4c; /* Dark gray */
-  color: white;
-  padding: 20px 0;
   text-align: center;
-  border-bottom: 5px solid #004c00; /* Dark green */
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
 }
 
-.header-container {
-  max-width: 1200px;
+header img {
+  display: block;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+  max-width: 150px;
+  height: auto;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2em;
+  margin: 10px 0;
 }
 
 nav ul {
@@ -34,134 +30,136 @@ nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 10px;
 }
 
 nav ul li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  padding: 10px 15px;
+  background-color: #444;
+  border-radius: 5px;
 }
 
-.banner {
-  position: relative;
+nav ul li a:hover {
+  background-color: #555;
 }
 
-.banner img {
-  width: 100%;
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10; /* Ensures the logo stays on top */
+}
+
+.logo-container img {
+  max-width: 150px;
   height: auto;
 }
 
-.banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 76, 0, 0.7); /* Dark green with transparency */
-  padding: 20px;
-  border-radius: 10px;
-  color: white;
-  text-align: center;
-}
-
-.highlight {
-  background-color: #f0f0f0; /* Light gray */
-  padding: 40px 20px;
-  text-align: center;
-  border-top: 5px solid #004c00; /* Dark green */
-  border-bottom: 5px solid #004c00; /* Dark green */
-}
-
-.highlight-title {
-  color: #004c00; /* Dark green */
-  font-size: 2em;
-}
-
-.program-links {
+/* Section styling */
+.section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 40px 20px;
-}
-
-.program-link {
-  background-color: #808080; /* Silver */
-  color: white;
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  width: calc(50% - 40px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-}
-
-.program-link:hover {
-  transform: scale(1.05);
-}
-
-.program-link a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.about-crestwind {
-  background-color: white;
-  padding: 40px 20px;
-}
-
-.about-section {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.about-text {
-  flex: 1 1 50%;
-  padding: 20px;
-  color: #333333;
-  line-height: 1.6;
-}
-
-.about-images {
-  flex: 1 1 50%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
   padding: 20px;
+  background-color: #f0f0f0;
+  margin: 20px 0;
+  flex-wrap: nowrap; /* Keeps items side by side as long as possible */
 }
 
-.about-images img {
-  width: 45%;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.section img {
+  max-width: 48%; /* Ensures the image stays below half width */
+  height: auto;
+  flex-shrink: 0;
+}
+
+.section .text-box {
+  max-width: 48%; /* Ensures the text stays below half width */
+  padding: 20px;
+  background-color: #fff;
+  text-align: left;
+  font-family: "Georgia", serif;
+  font-size: 18px;
+  line-height: 1.5;
+  flex-shrink: 0;
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+  .section {
+    flex-wrap: wrap; /* Allows wrapping earlier */
+    justify-content: center; /* Centers content when wrapped */
+  }
+
+  .section img,
+  .section .text-box {
+    max-width: 48%; /* Stays side by side until this breakpoint */
+  }
+}
+
+@media (max-width: 768px) {
+  .section img,
+  .section .text-box {
+    max-width: 100%; /* Stacks images and text when the screen is too small */
+  }
+}
+
+@media (max-width: 1200px) {
+  .logo-container {
+    display: none; /* Hides the logo on small screens */
+  }
+
+  .section img,
+  .section .text-box {
+    max-width: 100%; /* Fully stacks on small screens */
+  }
+
+  .section h2 {
+    font-size: 22px;
+  }
+
+  .section p,
+  .section ul {
+    font-size: 16px;
+  }
 }
 
 footer {
-  background-color: #4c4c4c; /* Dark gray */
-  color: white;
+  padding: 20px;
   text-align: center;
-  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+footer p {
+  margin: 10px 0;
 }
 
 footer ul {
   list-style: none;
   padding: 0;
-  margin: 10px 0 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 footer ul li {
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 
 footer ul li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
 }
